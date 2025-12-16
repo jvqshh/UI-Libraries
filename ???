@@ -630,8 +630,8 @@ function Library:Create(uiname,scrollenabled,elementspacing,scaleofui,UIColor)
 
 		LabelHolder.Name = "LabelHolder"
 		LabelHolder.Parent = Page
-		LabelHolder.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		LabelHolder.BackgroundTransparency = 1.000
+		LabelHolder.BackgroundColor3 = UIColor
+		LabelHolder.BackgroundTransparency = 0
 		LabelHolder.BorderColor3 = Color3.fromRGB(25, 25, 25)
 		LabelHolder.BorderSizePixel = 0
 		LabelHolder.Position = UDim2.new(0.0597014911, 0, 9.72671842e-07, 0)
