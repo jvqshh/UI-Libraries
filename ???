@@ -1,6 +1,6 @@
 local Library = {}
 
-function Library:Create(uiname,scrollenabled,elementspacing,UIColor)
+function Library:Create(uiname,scrollenabled,elementspacing,scaleofui,UIColor)
 	local Dko = Instance.new("ScreenGui")
 	local MainFrame = Instance.new("Frame")
 	local Dashboard = Instance.new("Frame")
@@ -46,6 +46,9 @@ function Library:Create(uiname,scrollenabled,elementspacing,UIColor)
 	MainFrameCorner.CornerRadius = UDim.new(0, 6)
 	MainFrameCorner.Name = "MainFrameCorner"
 	MainFrameCorner.Parent = MainFrame
+	local UIScaleentiree = Instance.new("UIScale", MainFrame)
+	UIScaleentiree.Scale = 0
+	game.TweenService:Create(UIScaleentiree, TweenInfo.new(1), {Scale = scaleofui}):Play()
 	local dragde = Instance.new("UIDragDetector", Dashboard)
 
 	local Page = Instance.new("ScrollingFrame")
