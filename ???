@@ -63,7 +63,7 @@ function Library:Create(uiname,scrollenabled,elementspacing,scaleofui,UIColor)
 	Page.BorderSizePixel = 0
 	Page.Position = UDim2.new(0, 0, 0.173846006, 0)
 	Page.Size = UDim2.new(0, 335, 0, 250)
-	Page.ScrollBarThickness = 3
+	Page.ScrollBarThickness = 0
 	Page.ScrollingEnabled = scrollenabled
 	Page.ScrollingDirection = Enum.ScrollingDirection.Y
 	Page.AutomaticCanvasSize = Enum.AutomaticSize.Y
