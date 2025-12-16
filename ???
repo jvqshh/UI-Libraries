@@ -46,14 +46,14 @@ function Library:Create(uiname,scrollenabled,elementspacing,UIColor)
 	MainFrameCorner.CornerRadius = UDim.new(0, 6)
 	MainFrameCorner.Name = "MainFrameCorner"
 	MainFrameCorner.Parent = MainFrame
-	local dragde = Instance.new("UIDragDetector", MainFrame)
+	local dragde = Instance.new("UIDragDetector", Dashboard)
 
 	local Page = Instance.new("ScrollingFrame")
 	local PageLayout = Instance.new("UIListLayout")
 
 	Page.Name = "Page"
 	Page.Parent = MainFrame
-	Page.Active = true
+	Page.Active = false
 	Page.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 	Page.BackgroundTransparency = 1.000
 	Page.BorderColor3 = Color3.fromRGB(25, 25, 25)
