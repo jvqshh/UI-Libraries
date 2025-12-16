@@ -1,6 +1,6 @@
 local Library = {}
 
-function Library:Create(uiname,scrollenabled,elementspacing,framesize,UIColor)
+function Library:Create(uiname,scrollenabled,elementspacing,UIColor)
 	local Dko = Instance.new("ScreenGui")
 	local MainFrame = Instance.new("Frame")
 	local Dashboard = Instance.new("Frame")
@@ -60,10 +60,10 @@ function Library:Create(uiname,scrollenabled,elementspacing,framesize,UIColor)
 	Page.BorderSizePixel = 0
 	Page.Position = UDim2.new(0, 0, 0.173846006, 0)
 	Page.Size = UDim2.new(0, 335, 0, 250)
-	Page.CanvasSize = UDim2.new(0,0,framesize,0)
 	Page.ScrollBarThickness = 3
 	Page.ScrollingEnabled = scrollenabled
 	Page.ScrollingDirection = Enum.ScrollingDirection.Y
+	Page.AutomaticCanvasSize = Enum.AutomaticSize.Y
 	PageLayout.Name = "PageLayout"
 	PageLayout.Parent = Page
 	PageLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
